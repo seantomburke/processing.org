@@ -8,7 +8,7 @@ class Rocket {
   {
     this.xpos = xconstruct;
     this.ypos = yconstruct;
-    this.rocketImage = loadImage(source + "rocket.png");
+    this.rocketImage = loadImage( "rocket.png");
   }
 
   void move() {

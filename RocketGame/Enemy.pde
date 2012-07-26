@@ -2,14 +2,14 @@ class Enemy {
   float xpos, ypos;
   int enemywidth = 10;
   int enemyheight = 10;
-  float xspeed;  // Speed of the shape
-  float yspeed;  // Speed of the shape
-  int xdirection = 1;  // Left or Right direction
-  int ydirection = -1;  // Top to Bottom direction
-  int xacceleration = 1; //x multiplier to speed or slow smiley
-  int yacceleration = 1; //y multiplier to speed or slow smiley
-  int maxspeed = 10; //the maximum allowed speed
-  int minspeed = 1;  //the minimum allowed speed
+  float xspeed;            // Speed of the shape
+  float yspeed;            // Speed of the shape
+  int xdirection = 1;      // Left or Right direction
+  int ydirection = -1;     // Top to Bottom direction
+  int xacceleration = 1;   // x multiplier to speed or slow smiley
+  int yacceleration = 1;   // y multiplier to speed or slow smiley
+  int maxspeed = 10;       // the maximum allowed speed
+  int minspeed = 1;        // the minimum allowed speed
   PImage enemyImage;
 
   Enemy(float xpos, float ypos, float xspeed, float yspeed)
@@ -18,7 +18,7 @@ class Enemy {
     this.ypos = ypos;
     this.xspeed = xspeed;
     this.yspeed = yspeed;
-    enemyImage = loadImage(source + "nyan.png");
+    enemyImage = loadImage("nyan.png");
   }
 
   void display() {
@@ -57,8 +57,8 @@ class Enemy {
     }
 
     if (xspeed > maxspeed) {
-      xspeed = maxspeed; // set speed to maxspeed
-      xacceleration = -xacceleration; //invert acceleration
+      xspeed = maxspeed;               // set speed to maxspeed
+      xacceleration = -xacceleration;  // invert acceleration
     }
 
     if (yspeed > maxspeed) {
@@ -84,14 +84,14 @@ class Enemy {
 
 
 
-    //if the speed goes below the minimum speed
-    //set the speed to the minimum speed
-    //to avoid a runaway smiley
-    //invert the acceleration to speed the smiley up
+    // if the speed goes below the minimum speed
+    // set the speed to the minimum speed
+    // to avoid a runaway enemy
+    // invert the acceleration to speed the enemy up
 
     if (xspeed < minspeed) {
-      xspeed = minspeed; // set the speed to minspeed
-      xacceleration = -xacceleration; //invert acceleration
+      xspeed = minspeed;                 // set the speed to minspeed
+      xacceleration = -xacceleration;    // invert acceleration
     }
 
     if (yspeed < minspeed) {

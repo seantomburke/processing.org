@@ -3,7 +3,7 @@
  7/6/2011
  */
  
-final public static String source = "files/processing/RocketGame/data/";
+//final public static String source = "files/processing/RocketGame/data/";
 float rocketx, rockety;   //determines rocket's position
 float enemyX, enemyY;    //determines enemy's position
 int delayTimer = 0;   //rockets shooting timer

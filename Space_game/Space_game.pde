@@ -50,11 +50,11 @@ AudioPlayer enemyfire;
 
 void setup() {
   size (750, 500 );
-  f= loadFont("AgencyFB-Reg-36.vlw");
+  //f= loadFont("AgencyFB-Reg-36.vlw");
   minim=new Minim(this);
-  backgroundmusic=minim.loadFile("Rundas.mp3", 2048);
+  //backgroundmusic=minim.loadFile("Rundas.mp3", 2048);
   shipkilled=minim.loadFile("Cartoon_Explosion.mp3");
-  backgroundmusic.loop();
+  //backgroundmusic.loop();
 
 
 
@@ -71,7 +71,7 @@ void draw()
   if (start==false)
   {
     fill(255,0,0);
-    textFont(f, 48);
+    //textFont(f, 48);
     text("press anywhere to play",width/4,height/2);
     if (mousePressed)
     {
@@ -97,7 +97,7 @@ void draw()
       }
       initiate = false;
     }
-    textFont(f, 24);
+    //textFont(f, 24);
     fill(255, 0, 0);
     text("score =" + score, width/10+20, 20);
     text("health ="+ health, width-125-width/10, 20);
@@ -176,7 +176,7 @@ void draw()
       }
       if (health>0 && nuketime>7500 && nuketime<7750 && health>0)
       {
-        textFont(f, 48);
+        //textFont(f, 48);
         text("Level 1 Clear", (width/2)-100, height/2);
       }
       if (nuketime>7500 && nuketime<7750)
@@ -255,7 +255,7 @@ void draw()
       if (nuketime>15100 && nuketime<15750 && health>0)
       {
         fill(0, 0, 255);
-        textFont(f, 48);
+        //textFont(f, 48);
         text("Level 2 Clear", (width/2)-100, height/2);
       }
 
@@ -337,7 +337,7 @@ void draw()
         projectilebs.removeAll(projectilebs);
         enemys.removeAll(enemys);
         fill(142, 53, 239);
-        textFont(f, 48);
+        //textFont(f, 48);
         text("Level 3 Clear", (width/2)-100, height/2);
       }
 
@@ -426,7 +426,7 @@ void draw()
       if (nuketime>33100 && nuketime<34000 && health>0)
       {
         fill(232, 100, 199);
-        textFont(f, 48);
+        //textFont(f, 48);
         text("Final Level Clear!!", (width/2)-100, height/2);
       }
 
