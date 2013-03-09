@@ -10,3 +10,7 @@ Smiley_Face
 
 The game I mentored him to create:
 Space_game
+
+
+-Sean Burke http://www.seantburke.com 
+Last Updated 10/19/11
