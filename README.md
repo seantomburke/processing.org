@@ -8,7 +8,7 @@ The Tuturiols I created are:
 Smiley_game
 Smiley_Face
 
-The game I mentored him to create:
+The game my student created:
 Space_game
 
 
